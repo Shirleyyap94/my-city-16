@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Rock, Paper, Scissors</h1>
+<button onclick="buttonClicked(0)">Rock</button>
+<button onclick="buttonClicked(1)">Paper</button>
+<button onclick="buttonClicked(2)">Scissors</button>
+
+<script type="text/javascript">
+	var objects = ["Rock", "Paper", "Scissors"];
+	var userScore = 0;
+	var computerScore = 0;	
+
+	function buttonCLicked(num){
+		var randomNumber = Math.floor(Math.random() * objects.length);
+		var selection = objects[randomNumber]
+		var userSelection = objects[num]
+		var result = "";
+
+			if (num == 0){
+				if (randomNumber == 0){
+					result = "It's a tie.";
+				}
+				else if (randomNumber == 1){
+					result = "You Lose.";
+					computerScore++;
+				}
+				else {
+					result = "You Win.";
+					userScore++;
+				}
+
+			}
+			else if (num == 1){
+				if (randomNumber == 0){
+					result = "You Win.";
+					userScore++;
+				}
+				else if (randomNumber == 1){
+					result = "It's a tie.";
+				}
+				else {
+					result = "You Lose.";
+					computerScore++;
+				}
+			}
+			else {
+				if (randomNumber == 0){
+					result = "You Lose.";
+					computerScore++;
+				}
+				else if (randomNumber == 1){
+					result = "You Win.";
+					userScore++;
+				}
+				else {
+					result = "It's a tie.";
+				}
+				
+			}
+			alert("You select "+userSelection+" and computer selects "+selection+". "+result+". Current score: "+userScore+ " - "+computerScore);
+	}
+
+
+
+		
+	
+	
+</script>
+
+</body>
+</html>
