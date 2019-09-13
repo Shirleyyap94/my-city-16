@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Rock Paper Scissors</title>
 </head>
 <body>
 <h1>Rock, Paper, Scissors</h1>
@@ -12,12 +12,12 @@
 <script type="text/javascript">
 	var objects = ["Rock", "Paper", "Scissors"];
 	var userScore = 0;
-	var computerScore = 0;	
+	var computerScore = 0;
 
-	function buttonCLicked(num){
+	function buttonClicked(num){
 		var randomNumber = Math.floor(Math.random() * objects.length);
-		var selection = objects[randomNumber]
-		var userSelection = objects[num]
+		var selection = objects[randomNumber];
+		var userSelection = objects[num];
 		var result = "";
 
 			if (num == 0){
@@ -61,7 +61,7 @@
 				}
 				
 			}
-			alert("You select "+userSelection+" and computer selects "+selection+". "+result+". Current score: "+userScore+ " - "+computerScore);
+	alert("You select "+userSelection+" and computer selects "+selection+". "+result+". Current score: "+userScore+ " - "+computerScore);
 	}
 
 
