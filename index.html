@@ -1,19 +1,201 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello World</title>
-</head>
-<body>
-<h1>Welcome to my dynamic website</h1>
-<button onclick="buttonClicked()">Click me!</button>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<script type="text/javascript">
-	
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Hello, world! <small>This is the tagline</small></h1>
+    <h2>This is subtitle 2 <small>This is the tagline</small></h2>
+    <h3>This is subtitle 3 <small>This is the tagline</small></h3>
+    <h4>This is subtitle 4 <small>This is the tagline</small></h4>
+    <h5>This is subtitle 5 <small>This is the tagline</small></h5>
+    <h6>This is subtitle 6 <small>This is the tagline</small></h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore <mark>et dolore magna></mark> aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation <strong>ullamco laboris nisi</strong> ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor <del>in reprehenderit</del> in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="text-justify">Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="text-left">This is line 1</p>
+    <p class="text-right">This is line 2</p>
+    <p class="text-center">This is line 3</p>
+    <p class="text-justify">This is line 4</p>
+    <hr>
+    <ul class="list-inline">
+      <li class="list-inline-item">This is item 1</li>
+      <li class="list-inline-item">This is item 2</li>
+      <li class="list-inline-item">This is item 3</li>
+    </ul>
+    <ul class="list-unstyled">
+      <li>This is item 1</li>
+      <li>This is item 2</li>
+      <li>This is item 3</li>
+    </ul>
+    <hr>
+    <p>To restart we type <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd></p>
 
-	function buttonClicked(){
-		alert("Hello World!");
-	}
-</script>
-</body>
+    <p class="text-primary">This is a paragraph</p>
+    <p class="text-secondary">This is a paragraph</p>
+    <p class="text-success">This is a paragraph</p>
+    <p class="text-danger">This is a paragraph</p>
+    <p class="text-info">This is a paragraph</p>
+    <p class="bg-dark text-light text-center">This is a paragraph bg example</p>
+
+    <button class="btn btn-primary">Press me!</button>
+    <button class="btn btn-secondary btn-lg">Another Button</button>
+    <button class="btn btn-success btn-sm">Smaller Button</button>
+    <button class="btn btn-success btn-lg" disabled="true">Smaller Button</button>
+    <p>To create a break we do <code>&lt;br/&gt;</code></p>
+
+    <hr>
+    <h2>My Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <h2>Complaint Form</h2>
+    <form>
+      <div class="form-group">
+        <label for ="exampleInputName">Name</label>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPhone">Phone</label>
+        <input type="phone" class="form-control" id="exampleInputPhone" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Feedback Type</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Complaint</option>
+          <option>Feedback</option>
+          <option>Enhancement</option>
+          <option>Others</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlText1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <h2>Table</h2>
+    <TABLE class="table table-bodered table-striped table-hover">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+      <tr>
+        <td>Muzaffar</td>
+        <td>mm@jjj.com</td>
+        <td>012345678</td>
+      </tr>
+      <tr>
+        <td>Muzaffar</td>
+        <td>mm@jjj.com</td>
+        <td>012345678</td>
+      </tr>
+      <tr>
+        <td>Muzaffar</td>
+        <td>mm@jjj.com</td>
+        <td>012345678</td>
+      </tr>
+
+    </TABLE>
+    <hr>
+    <h2>Bootstrap grid system</h2>
+    <div class="row">
+      <div class="col-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+      </div>
+
+      
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
